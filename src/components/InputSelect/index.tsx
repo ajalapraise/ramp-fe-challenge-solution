@@ -1,10 +1,11 @@
-import Downshift from 'downshift'
+import Downshift from "downshift"
 import { useCallback, useState } from "react"
 import classNames from "classnames"
 import {
   // DropdownPosition,
   // GetDropdownPositionFn,
-  InputSelectOnChange, InputSelectProps
+  InputSelectOnChange,
+  InputSelectProps,
 } from "./types"
 
 export function InputSelect<TItem>({
@@ -75,7 +76,7 @@ export function InputSelect<TItem>({
                 "RampInputSelect--dropdown-container-opened": isOpen,
               })}
               {...getMenuProps()}
-            // style={{ top: dropdownPosition.top, left: dropdownPosition.left }}
+              // style={{ top: dropdownPosition.top, left: dropdownPosition.left }}
             >
               {renderItems()}
             </div>
@@ -139,4 +140,3 @@ export function InputSelect<TItem>({
 
 //   return { top: 0, left: 0 }
 // }
-
